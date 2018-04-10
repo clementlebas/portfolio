@@ -15,7 +15,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/popup.css">
 	<link rel="icon"href="./image/favicon.png" />
-	<link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/portable.css" />
 	<link rel="stylesheet" media="screen and (max-width: 1200px)" href="./css/medium1.css" />
 	
 	<link rel="stylesheet" type="text/css" href="./css/style.css">	
@@ -95,18 +94,18 @@
 		
 		<div id="popup-js" class="popup">
 			
-			<span class="fermer">X</span>
+			
 			<img class="triangle" src="./image/triangle.png" alt="triangle">
 			<h2>
-				<img src="#" alt="convertisseur" class="photo">
-				Convertisseur de numération
+				<img src="#" alt="" class="photo">
+				Jeu de Go
 			</h2>
 			<hr>
 			<br>
 			<p>Equitis Romani autem esse filium criminis loco poni ab accusatoribus neque his iudicanti</p>
 			<br>
 			<p> 
-				<a href="..." > Code </a> | <a href="..."> Testez le ! </a> 
+				<a href="..." > GitHub </a> | <a href="..."> Testez le ! </a> 
 			</p>
 
 		</div>
@@ -128,7 +127,7 @@
 		
 		<div id="popup-c" class="popup">
 			
-			<span class="fermer">X</span>
+			
 			<img class="triangle" src="./image/triangle.png" alt="triangle">
 			<h2>
 				<img src="./image/convertisseur.png" alt="convertisseur" class="photo">
@@ -138,7 +137,7 @@
 			<br>
 			<p>Equitis Romani autem esse filium criminis loco poni ab accusatoribus neque his iudicanti</p>
 			<br>
-			<p> <a href="..." > Code </a> | <a href="..."> Testez le ! </a> </p>
+			<p> <a href="..." > GitHub </a> | <a href="..."> Testez le ! </a> </p>
 
 		</div>
 
@@ -183,7 +182,6 @@
 
 			<div id="popup-java" class="popup" >
 				
-				<span class="fermer">X</span>
 				<img class="triangle" src="./image/triangle.png" alt="triangle">
 				<h2>
 					<img src="./image/....png" alt="" class="photo"> Album photo
@@ -193,7 +191,7 @@
 				<p>Equitis Romani autem esse filium criminis loco poni ab accusatoribus neque his iudicanti</p>
 				<br>
 				<p>
-					<a href="..."> Code </a> |
+					<a href="..."> GitHub </a> |
 					<a href="..."> Testez le ! </a>
 				</p>
 			</div>

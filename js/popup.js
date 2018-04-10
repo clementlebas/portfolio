@@ -1,6 +1,6 @@
 $(document).ready(function () {
         
-    $('.popup-projet').mousedown(function (event)  {
+    $('.popup-projet').mouseover(function (event)  {
         
         console.log("Clique sur un projet");
         $('.popup').val() === 'montrer';
@@ -12,38 +12,15 @@ $(document).ready(function () {
         var pos=projet.offset(); //gere la position du popup
         console.log(pos);
         
-        pos.top-=popup.outerHeight()+20; //decalage verticale popup 
+        pos.top-=popup.outerHeight()+30; //decalage verticale popup 
         pos.left -= popup.outerWidth()-250;
 
         popup.fadeIn();
         popup.offset(pos);
         
         
-        // IF CLICK CLOSE
-        $('.popup>.fermer').mousedown(function () {
-            console.log("Clique sur X, fermeture popup ");
-            $(this).parent().fadeOut();
-            
-        });
-        // IF CLICK BODY
-        $('body').click(function (e) {
-            if ($(e.target).attr('id') != id)
+        $('.popup-projet').mouseleave(function (event)  {
                 popup.fadeOut();
-            else
-            popup.fadeIn();
-        });
-
-        //IF WIDTH CHANGE
-        var lastWidth = $(window).width();
-        $(window).resize(function () {
-            if ($(window).width() != lastWidth) {
-                //execute code here.
-                lastWidth = $(window).width();
-                popup.fadeOut();
-
-            }
-            else
-                popup.fadeIn();
 
         })  
 
