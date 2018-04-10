@@ -1,0 +1,534 @@
+div,ul,li,h3,h4,p{margin: 0; padding: 0;} /*supprime marge et padding par défaut*/
+
+
+body{
+	background: url(../image/topography.png) repeat;
+	font-size: 16px;	
+	line-height: 20px;
+	margin: 2% 15% 2% 15%;
+	padding: 0;
+	color: rgb(248, 142, 85);
+	font-family: 'Nunito', sans-serif, Trebuchet MS;
+}
+
+/*BARRE DE NAVIGATION-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+	a,.verscontact{
+		outline:none; /*retirer encadrement href*/
+	}
+.topnav{
+	font-size: 20px;
+	font-family: 'Nunito', sans-serif;
+	letter-spacing: 3px;
+	text-align: center;
+	text-transform: uppercase;
+	list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+   
+	top: 60px;
+	position: absolute;
+	z-index: 2;
+	width: 70%;
+}
+
+.topnav{
+	float: left;	
+}
+
+.topnav a {
+	float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: rgb(248, 142, 85);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+/*DROITE--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+h2{
+	font-size: 1.3em;
+}
+h3{	
+	margin-top: 60px;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	margin-left: 10%;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+/* HAUT DE PAGE -----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.titre{
+	margin-top: 0px;
+	margin-right: 80px;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: left;
+}
+
+.hr1{
+	border-top: 10px solid #e6e6e6;
+	margin-top: 5%;
+	width: 80%;
+	flex: auto;
+}
+
+.icone{
+	position:relative;
+	margin-top: -5%;
+	height: 40px;
+	float: right;
+	padding: 0px 1px 0 2px;
+}
+
+/* A PROPOS--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.apropos{
+	margin-top: 10%; 
+}
+.genius{
+
+	margin-left: 6%;
+	
+	width: 140px;
+	height: 150px;
+	padding-top: 13px;
+	position: absolute;
+	BORDER-RADIUS:45%;
+	vertical-align: center;
+	z-index: 1;
+}
+
+.titreP{
+	text-transform: uppercase; /*majuscule*/
+	font-weight: normal;
+	margin-left: 25%;
+	padding-left: 5px;
+	text-align: left;
+	padding-bottom: 15px;
+} 
+
+.presentation{
+	text-align: justify;
+	color: #666666;
+	font-size: 20px;
+	font-weight: normal;
+	margin-left: 25%;
+	padding-left: 5px;
+}
+
+.verscontact{
+	color:rgb(255,127,80);
+}
+.hr2 {
+	border-top: 3px solid #e6e6e6;
+	margin-bottom: 4%;
+	width: 50%;
+	display: block; 
+	
+	
+}
+
+/* BLOCS COMPETENCE -------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.bloc-top{
+text-align: center;
+	
+}
+
+.bloc{
+width: 25%;
+display: inline-block;
+vertical-align:top;
+padding-right: 30px;
+margin-bottom: 30px;
+text-align: center;
+}
+.bloc-second{
+  text-align: center;
+}
+
+
+.titlebloc p{
+	text-align: justify;
+	line-height: 18px;
+	color: #666666;
+	margin-top: 10px;
+	display:inline-block;
+}
+.titlebloc p+p{
+	color: rgb(248, 142, 85);
+	text-align: center;
+	
+}
+
+/*Icone compétence*/
+img.icolang.web{
+	width: 160px;
+}
+
+img.icolang{
+	float: left;
+	
+	
+	width: 50px;
+	height: 50px;
+}
+
+
+/*DIPLOME------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*adaptation de la taille de la timeline*/	
+.timeline{
+	position: relative;
+	/*min-height: 400px; */
+	overflow-y: hidden;
+	text-align: center;
+
+}
+
+/*tracé de la timeline verticale*/
+.timeline-item:before {  
+	content: '';
+	position: absolute;
+	background-color: #e6e6e6;
+	width: 3px;
+	height: 40%;
+	left:40%;/*alignement line et marker*/
+}
+
+.timeline-itemlast:before{
+	
+	position: absolute;
+	background-color: #e6e6e6;
+	width: 3px;
+	/*alignement line et marker*/
+
+}
+.timeline-item,.timeline-itemlast{
+	margin-left: 10%;
+	margin-top: 5%;	
+}
+
+.timeline-item-details{  /*zone cliquable details timeline**/
+	display: inline-block;
+	margin-bottom: 5%;
+}
+
+.timeline-item-details-date, .timeline-item-details-marker{
+	float: left;
+}
+
+.timeline-item-details-date{
+	color: #666666;
+	font-size: 1.3em;
+}
+.timeline-item-details-marker{
+	position: absolute;
+	border: 3px solid #d9d9d9;
+	border-radius: 50%;
+	background-color: white;
+	width: 28px;
+	height: 28px;
+	left:38.15%; /*alignement line et marker*/
+	transition: transform .3s, background-color .3s; /*fluidité animation*/
+}
+
+/*animation marker*/
+.timeline-item-details:hover .timeline-item-details-marker {
+	transform: scale(1.4);
+	background-color: #d9d9d9;
+}
+
+.timeline-item-details-description{
+ padding: 16px;
+ color: #666666;
+ background-color: #d9d9d9;
+ width: 400px;
+ border-radius: 5px;
+ margin-left: 43%;
+ margin-top: -4%;
+ word-wrap: break-word; /*pour que les mots ne dépassent pas la case*/
+ opacity: 0.9;
+ transition: opacity .3s;
+}
+
+.timeline-item-details:hover .timeline-item-details-description{
+	opacity: 1;
+}
+
+
+/*EXPERIENCES----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*adaptation de la taille de la timeline*/	
+.timeline2{
+	position: relative;
+	overflow-y: hidden;
+	text-align: center;
+	
+}
+
+/*tracé de la timeline verticale*/
+.timeline-item2:before {  
+	content: '';
+	position: absolute;
+	background-color: #e6e6e6;
+	width: 3px;
+	height: 40%;
+	left:22%;/*alignement line et marker*/
+}
+
+.timeline-item2,.timeline-item2last{
+	
+	margin: 5% 0 5% 10%;
+}
+
+.timeline-item-details2{  /*zone cliquable details timeline**/
+	display: inline-block;
+	margin-bottom: 5%;
+}
+
+.timeline-item-details-marker2 {
+	float: left;
+}
+
+.timeline-item-details-date2{
+	color: rgb(52, 50, 45);
+	font-size: 1.3em;
+}
+
+.timeline-item-details-marker2{
+	position: absolute;
+	border: 3px solid #d9d9d9;
+	border-radius: 50%;	
+	width: 18%;
+	height: 23%;
+	left:12.5%; /*alignement line et marker*/
+	transition: transform .3s, background-color .3s; /*fluidité animation*/
+}
+
+/*image du marker*/
+.stuart{
+	background-image: url(../image/stuart.jpeg); 
+	background-size: cover;
+}
+.toronto{
+	background-image: url(../image/toronto.jpg); 
+	background-size: cover;
+}
+.ag2r{
+	background-image: url(../image/ag2r.png); 
+	background-size: cover;
+}
+
+/*animation marker*/
+.timeline-item-details2:hover .timeline-item-details-marker2 {
+	transform: scale(1.4);
+	width: 18%;
+	height: 23%;
+}
+
+.timeline-item-details-description2{
+ padding: 16px;
+ color: #666666;
+ background-color: #d9d9d9;
+ width: 400px;
+ height: 120px;
+ border-radius: 5px;
+ margin-left: 250px;
+ word-wrap: break-word; /*pour que les mots ne dépassent pas la case*/
+ text-align: left;
+ opacity: 0.9;
+ transition: opacity .3s;
+}
+
+.timeline-item-details-description2 h4{
+	margin-bottom: 5px;
+}
+
+.timeline-item-details2:hover .timeline-item-details-description2{
+	opacity: 1;
+}
+
+/*CONTACT-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.titre-contact{
+	margin-left: 5%;
+	margin-bottom: -50px;
+	padding-top: 3%;
+	color:rgb(255,127,80);
+}
+
+.bkg-contact{ 
+	color: #666666;
+	height: 550px;
+	
+	border-radius: 10px;
+	
+	margin-top: 20%;
+	margin-bottom: 5%;
+	/*background-image: url(../image/cartemonde.png);*/
+	background-color: #333;
+	background-size: 100% 100%;
+	box-shadow: 1px 1px 8px #555;
+}
+ 
+
+form{
+	color: white;
+	text-align: left;
+	width: 50%;
+	margin-left: 5%;
+	margin-top: 3%;
+	display: inline-block;
+}
+
+input,textarea,button{
+	border-radius: 5px;
+	background-color: #e6e6e6;
+	margin:5px;
+	padding: 5px;
+}
+
+form,.reseau p{
+	color: #e6e6e6;
+	margin-bottom: 10px;
+}
+
+.reseau{
+	float: right;
+	margin-right: 5%;
+	margin-top: 15%;
+	text-align: right;
+}
+
+.reseau a{
+	color: #e6e6e6;
+	margin-bottom: 25%;
+	text-decoration: none;
+}
+
+p.social,p.cv{
+	
+	padding-top: 40%; 
+	
+}
+
+
+/*BAS DE PAGE---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+footer{
+	text-align: center;
+	color:black;
+	margin-bottom: 10px;
+}
+
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1200px */
+
+@media screen and (max-width: 1200px){
+	
+
+	
+	.genius{
+		margin-top: 20%;
+	}
+
+	.hr2{
+	display: none;
+}
+	.bloc{
+	width: 100%;
+	}
+
+	.titre,.hr1,.genius,h3,#diplome>h3,.timeline-item-details-description,.timeline-item-details-description2{
+		position: relative;
+		text-align: center;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.timeline-item-details-description,.timeline-item-details-description2{
+		width: auto;
+		height: auto;
+		margin: 0;
+		
+		
+	}
+	.timeline-item,.timeline-itemlast,.timeline-item2,.timeline-item2last{
+		margin:0;
+	}
+	.titreP,.hr2,.bloc.left{
+		text-align: center;
+		margin-left:0%;
+	}
+	.presentation{
+		margin-left:0%; 
+		
+	}
+	
+	
+	.timeline-item:before,.timeline-item2:before,.timeline-item-details-marker2,.timeline-item-details-date, .timeline-item-details-marker,.timeline-item-details-date2{
+		display: none;
+	}
+	textarea{
+		width:170px;
+	}
+	
+}	
+
+@media screen and (max-width: 720px){
+	.titreP{
+		margin-bottom:50%; 
+	}
+	form>p{
+		width: auto;
+		word-wrap: break-word;
+	}
+	.reseau{
+		margin-left:10%;
+		text-align: center;
+		float: left;
+	}
+	.bkg-contact{
+		height: auto;
+		padding-bottom: 130%;
+		margin-right: -10%;
+	}
+	.icone{
+		display: none;	
+	}
+	footer{
+		padding-top: 100%;
+	}
+}
+@media screen and (max-width: 500px)
+{
+	body{
+		background-color: tomato;
+	}
+}
+
+
+
+
+
+

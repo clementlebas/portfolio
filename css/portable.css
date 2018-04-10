@@ -1,0 +1,6 @@
+/* Sur tous types d'écrans orientés verticalement */
+@media screen and (max-width: 600px){
+	body{
+			background:pink;
+	}	
+}
