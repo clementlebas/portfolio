@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/wewatch/static/css/main.11da2f38.css",
+    "main.js": "/wewatch/static/js/main.8c232b32.js",
+    "static/js/787.edbd93c8.chunk.js": "/wewatch/static/js/787.edbd93c8.chunk.js",
+    "static/media/logo_ww.png": "/wewatch/static/media/logo_ww.c138f982f3e5bcda3a5c.png",
+    "static/media/background.svg": "/wewatch/static/media/background.875a6a99eeba00f56069.svg",
+    "index.html": "/index.html",
+    "main.11da2f38.css.map": "/wewatch/static/css/main.11da2f38.css.map",
+    "main.8c232b32.js.map": "/wewatch/static/js/main.8c232b32.js.map",
+    "787.edbd93c8.chunk.js.map": "/wewatch/static/js/787.edbd93c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11da2f38.css",
+    "static/js/main.8c232b32.js"
+  ]
+}

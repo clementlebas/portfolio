@@ -1,0 +1,29 @@
+body{
+   background-color:  rgb(212, 217, 218);
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+}
+
+img{
+    width: 20%;
+    
+}
+
+#appli{
+    position: absolute;
+    top:37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    border-radius: 10px; 
+    width: 600px;
+    border: solid gray 2px;
+}
+.maillot{
+    width: 4%;
+    height: 6%;
+    vertical-align: middle;
+    margin: 5px; 
+}
+

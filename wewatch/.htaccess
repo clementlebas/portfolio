@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Access to /wewatch"
+AuthUserFile /kunden/homepages/20/d739531296/htpasswd
+Require user wewatch
